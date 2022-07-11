@@ -1,75 +1,109 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
+    siteUrl: `https://www.thera-engineering.com/`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: 'Raphael ATALLAH',
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Thera Engineering | Raphael ATALLAH`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
+    description: `Senior Software Engineer`,
     // Optional: Twitter account handle
-    author: `@rfitzio`,
     // Optional: Github account URL
-    github: `https://github.com/ryanfitzgerald`,
+    github: `https://github.com/devnixs`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
+    linkedin: `https://www.linkedin.com/in/raphaelatallah/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: ` I'm a freelance senior software engineer working mostly with .NET technologies.
+      I've been building web applications professionally for the last eight years, and still loving it!
+      I enjoy working on complex architectures.
+      I'm based in the south of france, where it's nice and sunny 🌞
+    `,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
-        description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Cocolis',
+        date: '2018 - now',
+        description: 'Frontend engineer',
+        link: 'https://www.cocolis.fr/',
       },
       {
-        name: 'ChromeExtensionKit',
-        description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://chromeextensionkit.com/?ref=devfolio',
+        name: 'XBTO',
+        date: '2018 - now',
+        description: 'Fullstack engineer',
+        link: 'https://www.xbto.com/',
       },
       {
-        name: 'Another Cool Project',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Stablehouse',
+        date: '2018 - now',
+        description: 'Fullstack engineer',
+        link: 'https://www.stablehouse.com/',
+      },
+      {
+        name: '1001Audios',
+        date: '2016 - now',
+        description: 'Fullstack engineer',
+        link: 'https://www.1001Audios.fr/',
+      },
+      {
+        name: 'BeezUP',
+        date: '2016 - 2021',
+        description: 'Frontend engineer',
+        link: 'https://www.beezup.com/',
+      },
+      {
+        name: 'WeRecruit',
+        date: '2016 - 2021',
+        description: 'Fullstack engineer',
+        link: 'https://werecruit.com/',
+      },
+      {
+        name: 'BijouxMurano',
+        date: '2015 - 2021',
+        description: 'Fullstack engineer',
+        link: 'https://www.bijouxmurano.fr/',
+      },
+      {
+        name: 'RA Cycles',
+        date: '2015 - 2016',
+        description: 'Fullstack engineer',
+        link: 'https://www.racycles.com/',
+      },
+      {
+        name: 'The Spider',
+        date: '2015 - 2016',
+        description: 'Fullstack engineer',
+        link: 'https://www.thespider.com/',
+      },
+      {
+        name: 'Restopolitan',
+        date: '2014 - 2015',
+        description: 'Backend engineer',
+        link: 'https://www.restopolitan.com/',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Arts et Métiers ParisTech',
+        description: 'One of the top engineering school in France',
+        link: 'https://artsetmetiers.fr/en',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
         name: 'Languages & Frameworks',
-        description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+        description: 'C#, ASP.NET Core, Typescript, React',
       },
       {
         name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        description: 'SQL Server, PostreSQL',
       },
       {
         name: 'Other',
         description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, Cloudformation, Application Architecture, Zero Trust',
       },
     ],
   },
@@ -80,13 +114,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
       },
     },
     {

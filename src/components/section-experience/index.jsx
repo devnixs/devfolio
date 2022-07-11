@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Section from '../section';
 import SummaryItem from '../summary-item';
 
@@ -7,7 +6,7 @@ const SectionExperience = ({ experience }) => {
   if (!experience.length) return null;
 
   return (
-    <Section title="Experience">
+    <Section title="Education">
       {experience.map((item) => (
         <SummaryItem
           key={item.name}

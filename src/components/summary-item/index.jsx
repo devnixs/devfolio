@@ -5,9 +5,16 @@ const classes = {
   wrapper: 'mb-6',
   name: 'font-semibold text-gray-900 pb-1',
   description: 'text-md text-gray-600 font-light',
+  date: 'text-md text-gray-600 font-light ml-5',
 };
 
-const SummaryItem = ({ name, description, link = false, internal = false }) => {
+const SummaryItem = ({
+  name,
+  description,
+  link = false,
+  date,
+  internal = false,
+}) => {
   let linkContent;
   if (internal) {
     linkContent = <Link to={link}>{name}</Link>;
@@ -17,13 +24,13 @@ const SummaryItem = ({ name, description, link = false, internal = false }) => {
 
   return (
     <div className={classes.wrapper}>
-      <h3
-        className={`${classes.name} ${
-          link ? 'hover:underline hover:text-black' : ''
-        }`}
-      >
-        {link ? linkContent : name}
+      <h3 className={`${classes.name}`}>
+        <span className={` ${link ? 'hover:underline hover:text-black' : ''}`}>
+          {link ? linkContent : name}
+        </span>
+        {date && <span className={classes.date}>{date}</span>}
       </h3>
+
       <p className={classes.description}>{description}</p>
     </div>
   );
