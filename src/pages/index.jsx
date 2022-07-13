@@ -3,7 +3,6 @@ import get from 'lodash/get';
 import React from 'react';
 import Header from '../components/header';
 import Layout from '../components/layout';
-import SectionAbout from '../components/section-about';
 import SectionContact from '../components/section-contact';
 import SectionExperience from '../components/section-experience';
 import SectionProjects from '../components/section-projects';
@@ -20,7 +19,6 @@ const Index = ({ data }) => {
     <Layout>
       <SEO />
       <Header metadata={data.site.siteMetadata} noBlog={false} />
-      {about && <SectionAbout about={about} />}
       {projects && projects.length && <SectionProjects projects={projects} />}
       {skills && skills.length && <SectionSkills skills={skills} />}
       {experience && experience.length && (
@@ -48,6 +46,7 @@ export const pageQuery = graphql`
           description
           date
           link
+          stack
         }
         experience {
           name

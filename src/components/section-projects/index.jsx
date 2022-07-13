@@ -6,7 +6,7 @@ const SectionProjects = ({ projects }) => {
   if (!projects.length) return null;
 
   return (
-    <Section title="Experience">
+    <Section title="Projects">
       {projects.map((project) => (
         <SummaryItem
           key={project.name}
@@ -14,6 +14,7 @@ const SectionProjects = ({ projects }) => {
           description={project.description}
           link={project.link}
           date={project.date}
+          stack={project.stack}
         />
       ))}
     </Section>

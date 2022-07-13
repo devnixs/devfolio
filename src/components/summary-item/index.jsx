@@ -5,6 +5,7 @@ const classes = {
   wrapper: 'mb-6',
   name: 'font-semibold text-gray-900 pb-1',
   description: 'text-md text-gray-600 font-light',
+  stack: 'text-sm text-gray-600 font-light',
   date: 'text-md text-gray-600 font-light ml-5',
 };
 
@@ -14,6 +15,7 @@ const SummaryItem = ({
   link = false,
   date,
   internal = false,
+  stack,
 }) => {
   let linkContent;
   if (internal) {
@@ -32,6 +34,7 @@ const SummaryItem = ({
       </h3>
 
       <p className={classes.description}>{description}</p>
+      {stack && <p className={classes.stack}>{stack}</p>}
     </div>
   );
 };

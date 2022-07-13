@@ -14,11 +14,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/raphaelatallah/`,
     // Content of the About Me section
-    about: ` I'm a freelance senior software engineer working mostly with .NET technologies.
-      I've been building web applications professionally for the last eight years, and still loving it!
-      I enjoy working on complex architectures.
-      I'm based in the south of france, where it's nice and sunny 🌞
-    `,
+    about: ``,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -26,67 +22,84 @@ module.exports = {
         date: '2018 - now',
         description: 'Frontend engineer',
         link: 'https://www.cocolis.fr/',
+        stack: 'React, NextJS',
       },
       {
         name: 'XBTO',
         date: '2018 - now',
         description: 'Fullstack engineer',
         link: 'https://www.xbto.com/',
+        stack: 'React, C#, ASP.NET Core, Blazor',
       },
       {
         name: 'Stablehouse',
         date: '2018 - now',
         description: 'Fullstack engineer',
         link: 'https://www.stablehouse.com/',
+        stack: 'C#, ASP.NET Core, React, AWS Cloudformation',
       },
       {
         name: '1001Audios',
         date: '2016 - now',
         description: 'Fullstack engineer',
         link: 'https://www.1001Audios.fr/',
+        stack: 'React, C#, ASP.NET Core',
       },
       {
         name: 'BeezUP',
         date: '2016 - 2021',
         description: 'Frontend engineer',
         link: 'https://www.beezup.com/',
+        stack: 'AngularJS',
+      },
+      {
+        name: 'IMN',
+        date: '2016 - 2021',
+        description: 'Frontend engineer',
+        link: 'https://imnnow.com/en/home.html',
+        stack: 'AngularJS',
       },
       {
         name: 'WeRecruit',
         date: '2016 - 2021',
         description: 'Fullstack engineer',
         link: 'https://werecruit.com/',
+        stack: 'C#, ASP.NET Core, AngularJS',
       },
       {
         name: 'BijouxMurano',
         date: '2015 - 2021',
         description: 'Fullstack engineer',
         link: 'https://www.bijouxmurano.fr/',
+        stack: 'C#, ASP.NET Core',
       },
       {
-        name: 'RA Cycles',
+        name: 'RACycles',
         date: '2015 - 2016',
-        description: 'Fullstack engineer',
+        description: 'Backend engineer',
         link: 'https://www.racycles.com/',
+        stack: 'C#, ASP.NET',
       },
       {
-        name: 'The Spider',
+        name: 'TheSpider',
         date: '2015 - 2016',
         description: 'Fullstack engineer',
         link: 'https://www.thespider.com/',
+        stack: 'C#, ASP.NET, AngularJS',
       },
       {
         name: 'Restopolitan',
         date: '2014 - 2015',
         description: 'Backend engineer',
         link: 'https://www.restopolitan.com/',
+        stack: 'C#, ASP.NET',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
         name: 'Arts et Métiers ParisTech',
-        description: 'One of the top engineering school in France',
+        description: 'One of the top engineering schools in France',
         link: 'https://artsetmetiers.fr/en',
       },
     ],
@@ -94,11 +107,11 @@ module.exports = {
     skills: [
       {
         name: 'Languages & Frameworks',
-        description: 'C#, ASP.NET Core, Typescript, React',
+        description: 'C#, ASP.NET Core, Typescript, React, Blazor',
       },
       {
         name: 'Databases',
-        description: 'SQL Server, PostreSQL',
+        description: 'SQL Server, PostgreSQL',
       },
       {
         name: 'Other',
@@ -142,18 +155,11 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `ADD YOUR TRACKING ID HERE`, // Optional Google Analytics
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `devfolio`,
-        short_name: `devfolio`,
+        name: `Thera Engineering`,
+        short_name: `Thera Engineering`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`, // This color appears on mobile
