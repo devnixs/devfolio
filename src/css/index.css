@@ -282,3 +282,13 @@ pre[class*='language-'] {
   margin-left: 17px;
   margin-top: 1px;
 }
+
+
+.reveal{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.email-address{
+  text-decoration: underline;
+}
