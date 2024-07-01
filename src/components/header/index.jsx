@@ -33,11 +33,11 @@ const Header = ({ metadata = {}, noBlog = false }) => {
       <div className={classes.contentWrapper}>
         <div className={'flex-none text-lg text-gray-600 font-light md:flex-1'}>
           I'm Raphael ATALLAH, founder of Thera Engineering. <br />
-          I'm a senior software engineer working mostly with .NET technologies.{' '}
+          I'm a senior software engineer working primarily with .NET technologies.{' '}
           <br />
-          I've been building complex web applications professionally for the
-          last eight years, and still loving it! <br />
-          I'm based in the south of france, where it's nice and sunny 🌞
+          I have been building complex web applications professionally for the
+          last eight years and still love it! <br />
+          I'm based in the south of France, where it's nice and sunny 🌞
         </div>
         <ul className={classes.list}>
           {twitter && (

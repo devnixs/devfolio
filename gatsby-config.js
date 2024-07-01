@@ -18,13 +18,6 @@ module.exports = {
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Cocolis',
-        date: '2018 - now',
-        description: 'Frontend engineer',
-        link: 'https://www.cocolis.fr/',
-        stack: 'React, NextJS',
-      },
-      {
         name: 'XBTO',
         date: '2018 - now',
         description: 'Fullstack engineer',
@@ -37,6 +30,13 @@ module.exports = {
         description: 'Fullstack engineer',
         link: 'https://www.stablehouse.com/',
         stack: 'C#, ASP.NET Core, React, AWS Cloudformation',
+      },
+      {
+        name: 'Cocolis',
+        date: '2018 - 2023',
+        description: 'Frontend engineer',
+        link: 'https://www.cocolis.fr/',
+        stack: 'React, NextJS',
       },
       {
         name: '1001Audios',

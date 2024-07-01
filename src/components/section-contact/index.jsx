@@ -9,13 +9,13 @@ function rot13(message) {
   );
 }
 
-const SectionContact = ({}) => {
+const SectionContact = () => {
   const [emailAddress, setEmailAddress] = React.useState(null);
   const [revealed, setRevealed] = React.useState(false);
 
   React.useEffect(() => {
     setEmailAddress(rot13(atob('cGJhZ25wZ0BndXJlbi1yYXR2YXJyZXZhdC5wYno=')));
-  });
+  }, []);
 
   return (
     <Section title="Contact">
